@@ -890,6 +890,12 @@ Get-WindowsCapability -Online -Name OpenSSH.Server*
 
 2. 서비스 시작과 자동 실행 설정
 Start-Service sshd
+
+
+cd 보낼파일있는폴더
+python3 -m http.server 8000
+
+그다음 노트북 브라우저에서 http://JetsonIP:8000에 접속하면 파일 목록이 나오고, 클릭하면 바로 다운로드돼요.
 ```
 
 ## 참고 자료

@@ -882,6 +882,16 @@ sudo poweroff
 
 ---
 
+## 18. ssh 서버 설치 및 종료
+
+```
+1. 설치 여부 확인
+Get-WindowsCapability -Online -Name OpenSSH.Server*
+
+2. 서비스 시작과 자동 실행 설정
+Start-Service sshd
+```
+
 ## 참고 자료
 
 - [Jetson Orin Nano Developer Kit Quick Start Guide](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html)
